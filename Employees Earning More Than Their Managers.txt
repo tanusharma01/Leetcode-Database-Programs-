@@ -1,0 +1,3 @@
+SELECT employee.name as employee
+ FROM employee as employee,  employee as manager
+ WHERE employee.managerid = manager.id and employee.salary > manager.salary
