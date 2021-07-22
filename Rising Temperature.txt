@@ -1,0 +1,1 @@
+select id from Weather A where exists (select * from Weather where Temperature < A.Temperature and recordDate = date_sub(A.recordDate,interval 1 day))
